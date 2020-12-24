@@ -1,4 +1,6 @@
 # Git-and-Github-Tutorial
+If you are very new to git, read through the readme first. If you want to revise a topic, than you can go to any of the above topics. They contain detailed instrudtions for use.
+
 ## About VCS and Git
 
 We can think of version control from the perspectives of content, teams, and agility. Version control manages a collection of changing and improving files which we can call a project. The complete history of the project is tracked and available at any time. Version control also supports teams working on that collection of files. Teams work in many different ways, and a good version control system will support many of their workflows or ways of getting work done. Version control helps support collaboration on the project and improves quality through facilitating team communication and reviews. Finally, version control enables agility, the ability to adapt quickly and constructively to a changing environment.
@@ -26,5 +28,20 @@ These clients helps the users in maintain a git based Version control and also h
   3. **Remote VCS Websites** are web services hosting remote version control systems. These can be thought of as cloud services for VCS mannagement. Usually, companies have their own remote repositories for confidential work, but the entire open-source community relies on free services offered by sites like [Github](https://github.com/) for personal use and [BitBucket](https://bitbucket.org/product) for professional use.   
 
 ---
-## About other files in this repository 
+## Getting Started
 
+The fisrt thing you do after installing git is to configure your username, email, and the default editor.
+
+  * git config --global user.name <Your name>. 
+    For example :  git config --global user.name "Jash Shah"
+
+Here, the tag **--global** means that username has been configured for all the repository for a particular user. You can use the tags **--local** or **--system** instead.
+
+  * Similalry configure the email address as well. If you are installing git client after installing github desktop, this setting gets configured by default -
+
+git config --global user.email "jashshah0801@gmail.com"
+
+git config --global user.email "7563883+Jash-2000@users.noreply.github.com"  <This is the default configuration>
+
+
+Now that you are ready with basic configurations, follow the order number of the files present in this repository.
