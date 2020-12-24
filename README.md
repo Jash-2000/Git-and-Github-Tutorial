@@ -42,7 +42,7 @@ Here, the tag **--global** means that username has been configured for all the r
 
 git config --global user.email "jashshah0801@gmail.com"
 
-git config --global user.email "7563883+Jash-2000@users.noreply.github.com"  <This is the default configuration>
+git config --global user.email "7563883+Jash-2000@users.noreply.github.com"  **<This is the default configuration/>**.
 
 
 Now that you are ready with basic configurations, follow the order number of the files present in this repository.
