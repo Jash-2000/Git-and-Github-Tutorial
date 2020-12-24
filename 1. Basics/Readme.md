@@ -49,7 +49,7 @@ Once the remote repo has been created, you are ready to synch it to a local repo
   
   ![git clone](https://github.com/Jash-2000/Git-and-Github-Tutorial/blob/main/1.%20Basics/git_clone.JPG)
   
-  2. **__Adding__** - In this case we add a remote repository to an already existing local repository. It is very interesting to note that you can not push the commits from local repo to remote repo before pulling them. This means that an local reposiory can only push if it is updated with the latest version of the remote repo.
+  2. **__Adding__** - In this case we add a remote repository to an already existing local repository. This will add files from remote repository to the local repository but you would have to merge or commit the files (Usually merging is prefered to avoid branching issues).   
   
   The command for doing this is **git remote add /<alias name for remote repo/> /<url/>** 
   
@@ -60,5 +60,14 @@ Once a remote repo has been clonned/added to a local repo, we can use the comman
 ---
 
 ## Pushing to remote repository
+
+The first time you push, you would have to enter your github account's credentials. 
+Pushing is done using the command **git push -u /<alias of remote repository/> /<branch name that you are commiting to/>**.
+
+The **-u** is used to maintain a tracking relation with the remote repository.  
+
+![push to remote](https://github.com/Jash-2000/Git-and-Github-Tutorial/blob/main/1.%20Basics/push.JPG)
+
+It is very interesting to note that you can not push the commits from local repo to remote repo before pulling them. This means that an local reposiory can only push if it is updated with the latest version of the remote repo. This has been solved in this [stackoverflow link](https://stackoverflow.com/questions/28429819/rejected-master-master-fetch-first).
 
 
