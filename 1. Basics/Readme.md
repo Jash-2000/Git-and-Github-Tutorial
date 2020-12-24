@@ -32,3 +32,33 @@ Once git has been initilized, the directory has the following items present in i
   
   ![Git Basics](https://github.com/Jash-2000/Git-and-Github-Tutorial/blob/main/1.%20Basics/git_basics.JPG)
 
+---
+
+## Remote Repository
+### One very important thing to note is that locally initialized repositories are aliased by **master** keyword while clonned repos are termed as **main**. This might give an error while pushing to the remote repository. The details for the same are given [here](https://github.com/github/renaming).
+
+A remote repository is usually a professionally managed repository that is hosted in a data center or in the cloud. It often acts as the central source of truth or official state of the project. And it often integrates with other systems like issue trackers and continuous delivery pipelines.A remote repository is often a bare repository. Because nobody works with the repository locally, there is usually no working tree or staging area on a remote repository. The root directory of a remote repository is similar to the ".git" directory in a local repository. By convention, remote repository names end with **.git**. Tutorial for creating a remote repository can be found in the Github and Bitbucket tutorial links I provided in [Project Readmefile](https://github.com/Jash-2000/Git-and-Github-Tutorial/blob/main/README.md).
+ 
+Once the remote repo has been created, you are ready to synch it to a local repository but there are 2 ways to do so :
+
+  1. **__Clonning__** - This is done when we do not have a local repository but a remote one is present. So, we clone (i.e. create a copy of the entire repository on local machine). Doing this downloads each and every file from the remote repository and is very important task when working on an open-source project.
+  
+  The command used for clonning is **git clone /<url for cloning/> [ optional project name ]**. Note that the project name is the name with which your local project directory would be saved. In case you do not provide the project name, according to the default settings, git will name the local reposiotry with the same name given to the remote repository.
+  
+  The following figure would make this thing more clear. I have clonned this repository itself to add locally saved images in the repository.
+  
+  ![git clone](https://github.com/Jash-2000/Git-and-Github-Tutorial/blob/main/1.%20Basics/git_clone.JPG)
+  
+  2. **__Adding__** - In this case we add a remote repository to an already existing local repository. It is very interesting to note that you can not push the commits from local repo to remote repo before pulling them. This means that an local reposiory can only push if it is updated with the latest version of the remote repo.
+  
+  The command for doing this is **git remote add /<alias name for remote repo/> /<url/>** 
+  
+
+Once a remote repo has been clonned/added to a local repo, we can use the command **git remote -v** to view its status. 
+![Verbose](https://github.com/Jash-2000/Git-and-Github-Tutorial/blob/main/1.%20Basics/verbose.JPG)
+
+---
+
+## Pushing to remote repository
+
+
