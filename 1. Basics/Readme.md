@@ -51,7 +51,7 @@ Once the remote repo has been created, you are ready to synch it to a local repo
   
   2. **__Adding__** - In this case we add a remote repository to an already existing local repository. This will add files from remote repository to the local repository but you would have to merge or commit the files (Usually merging is prefered to avoid branching issues).   
   
-  The command for doing this is **git remote add /<alias name for remote repo/> /<url/>** 
+  The command for doing this is **git remote add <alias name for remote repo/> <url/>** 
   
 
 Once a remote repo has been clonned/added to a local repo, we can use the command **git remote -v** to view its status. 
@@ -62,7 +62,7 @@ Once a remote repo has been clonned/added to a local repo, we can use the comman
 ## Pushing to remote repository
 
 The first time you push, you would have to enter your github account's credentials. 
-Pushing is done using the command **git push -u /<alias of remote repository/> /<branch name that you are commiting to/>**.
+Pushing is done using the command **git push -u <alias of remote repository/> <branch name that you are commiting to/>**.
 
 The **-u** is used to maintain a tracking relation with the remote repository.  
 
