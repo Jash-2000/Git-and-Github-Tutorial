@@ -1,5 +1,6 @@
 # Git-and-Github-Tutorial
 If you are very new to git, read through the readme first. If you want to revise a topic, than you can go to any of the above topics. They contain detailed instrudtions for use.
+This tutorial is specifically for using Git using command line tools. Although, I have added links for using it with GUI tools and Web- based serveces as well.
 
 ## About VCS and Git
 
